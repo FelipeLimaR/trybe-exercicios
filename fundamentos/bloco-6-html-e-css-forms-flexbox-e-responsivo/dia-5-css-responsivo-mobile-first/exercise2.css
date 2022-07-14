@@ -1,0 +1,264 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: bisque;
+}
+
+/* pequeno */
+@media screen and (max-width: 630px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    header p {
+        margin: auto;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        justify-content: space-around;
+    }
+
+    header nav ul li {
+        font-size: 30px;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .aside-one {
+        font-style: italic;
+    }
+
+    .aside-one ul li, .aside-two ul li {
+        font-size: 24px;
+    }
+    
+    .aside-two {
+        background-color: rgb(235, 214, 190);
+    }
+
+    .main-content h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 100;
+    }
+
+    .main-content p {
+        margin-left: 25px;
+        margin-right: 20px;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 200, 148);
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    footer p {
+        text-align: center;
+    }
+
+}
+
+/* médio*/
+
+@media screen and (min-width: 631px) and (max-width: 999px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header p {
+        margin: auto;
+        font-size: 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        margin: auto;
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header nav ul li {
+        font-size: 38px;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .aside-one {
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aside-one ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside-one ul li, .aside-two ul li {
+        font-size: 38px;
+        margin-left: 20px;
+    }
+    
+    .aside-two {
+        background-color: rgb(235, 214, 190);
+    }
+
+    .main-content h1 {
+        text-align: center;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 100;
+    }
+
+    .main-content p {
+        margin-left: 25px;
+        margin-right: 20px;
+        font-size: 32px;
+        font-style: italic;
+    }
+
+    footer {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 200, 148);
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    footer p {
+        text-align: center;
+        margin:15px;
+    }
+
+}
+
+/* grande */
+
+@media screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header p {
+        margin: auto;
+        font-size: 65px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        margin: auto;
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header nav ul li {
+        font-size: 50px;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 55px;
+        margin: 10px;
+    }
+
+    .aside-one {
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aside-one ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside-one ul li, .aside-two ul li {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    
+    .aside-two {
+        background-color: rgb(235, 214, 190);
+    }
+
+    .main-content h1 {
+        text-align: center;
+        font-size: 55px;
+        font-style: italic;
+        font-weight: 100;
+    }
+
+    .main-content p {
+        margin-left: 25px;
+        margin-right: 20px;
+        font-size: 45px;
+        font-style: italic;
+    }
+
+    footer {
+        font-size: 38px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 200, 148);
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    footer p {
+        text-align: center;
+        margin:15px;
+    }
+}
