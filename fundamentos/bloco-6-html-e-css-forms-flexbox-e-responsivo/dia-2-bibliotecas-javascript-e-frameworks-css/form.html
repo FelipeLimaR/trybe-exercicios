@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TribeTrip</title>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header><h1>TribeTrip</h1></header>
+
+<!--1 O formulário deverá permitir que a pessoa usuária insira os seguintes campos:
+Nome Completo: Limitado entre 10 e 40 caracteres.-->
+
+<form action="">
+    <fieldset>
+    Nome: <input type="text" minlength="10" maxlength="40" name="nome" id="nomeId">
+    <br><br>
+
+    <!--E-mail: Limitado entre 10 e 50 caracteres.-->
+    Email: <input type="email" inlength="10" maxlength="50" name="email" id="emailId">
+    <br><br>
+
+    <!--Destino Preferido: 4 opções: Cidade, Campo, Praia, Montanhas.-->
+    <input type="radio" name="destino" id="cidade">
+    <label for="cidade">Cidade</label>
+
+    <input type="radio" name="destino" id="campo">
+    <label for="campo">Campo</label>
+
+    <input type="radio" name="destino" id="praia">
+    <label for="praia">Praia</label>
+
+    <input type="radio" name="destino" id="montanhas">
+    <label for="montanhas">Montanhas</label>
+    <br><br>
+
+    <!--Limite de 500 caracteres.-->
+    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+    <br><br>
+    <textarea name="txtArea" maxlength="500" id="txtAreaId" cols="30" rows="10"></textarea><br><br>
+
+    <!-- Qual a melhor data para realizar sua viagem? -->
+    Data: <input type="date" name="" id="">
+    <br><br>
+
+    <input type="checkbox" name="" id="">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
+    <br>
+
+    <input type="checkbox" name="" id=""> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.<br>
+    <br>
+
+    </fieldset>
+    <br>
+
+    <!-- 2 - Crie um botão para enviar as informações preenchidas. -->
+    <button type="submit" onclick="prevent()" id="enviarId">Enviar</button>
+
+    <!-- 4 - Crie um botão que limpe as informações contidas nos campos;  -->
+    <button type="reset">Apagar</button>
+</form>
+
+    <script>
+        // 3 - Interrompa o comportamento padrão do botão submit utilizando o método preventDefault(). Nossa amiga Carol Silva nos contou um pouco sobre como fazer isso, lembra?
+
+        const botaoEnviar = document.querySelector('#enviarId')
+        function prevent(event) {
+            event.preventDefault();
+        }
+        botaoEnviar.addEventListener('click', prevent)
+
+        //  Bonus
+        // 1 - A TrybeTrip precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar o uso de imagens possa enviar suas informações.
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- 2 - Faça a validação dos campos com limite de caracteres. Caso não estejam dentro do esperado ao clicar no botão de submit, um alerta deve ser mostrado com a mensagem: 'Dados Inválidos'. Caso contrário, a mensagem 'Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.' deverá aparecer na tela. -->
